@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+class A{
+	public:
+		void fun(){
+			cout<<"A";
+		}
+};
+class B: public A{
+	public:
+		void fun(){
+			cout<<"B";
+		}
+};
+int main(){
+	B obj;
+	obj.A::fun();
+	
+}
